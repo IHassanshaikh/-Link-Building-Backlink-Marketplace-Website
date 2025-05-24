@@ -1,0 +1,55 @@
+.traffic {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.traffic-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1d2128;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.traffic-heading span {
+  color: #ED1D24;
+}
+
+.country-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.country-button {
+  background-color: #1d2128;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.country-button:hover {
+  background-color: #343a40;
+}
+
+@media (max-width: 600px) {
+.country-buttons {
+    justify-content: start;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .country-button {
+    padding: 10px 16px;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,215 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  color: rgb(23, 23, 23);
+background-image: url("../../assets/images/herobg3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.hero_left {
+  flex: 1;
+  /* max-width: 700px; */
+  text-align: left;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.hero_left h1 {
+  font-size: 3.25rem;
+  line-height: 62px;
+  margin-bottom: 20px;
+  color: #ED1D24;
+  word-spacing: 0;
+  font-weight: 800;
+}
+
+.hero_left p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero_left b {
+  font-weight: bold;
+}
+
+.hero_button {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 24px;
+  background: linear-gradient(45deg, #ff4935, #FF7E69);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero_button img {
+  margin-right: 10px;
+}
+
+.hero_button:hover {
+  background: linear-gradient(45deg, #fe4631, #ff3718);
+  color: white;
+
+}
+
+.hero_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  margin-top: 0px;
+  animation: slideInFromRight 1s ease-out;
+}
+
+.hero_right img {
+  max-width: 700px;
+  width: 37vw;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Add these keyframes */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hero_left {
+  animation: slideFromLeft 0.8s ease-out forwards;
+  transform: translateX(-100%);
+  /* Initial state */
+  opacity: 0;
+}
+
+.hero_right {
+  animation: slideFromRight 0.8s ease-out forwards;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* Add this to existing .hero_left and .hero_right classes */
+.hero_left {
+  flex: 1;
+  max-width: 700px;
+  text-align: left;
+  /* Add these */
+  transform: translateX(0);
+  animation-fill-mode: forwards;
+}
+
+.hero_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  margin-top: 0px;
+  transform: translateX(0);
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+.hero_left,
+.hero_right {
+  will-change: transform, opacity;
+}
+
+/* Responsive Design */
+@media (max-width: 1220px) {
+  .hero {
+    height: 434px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    height: max-content;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero_right img {
+    width: 68vw;
+    max-width: 400px;
+  }
+
+  .hero_left {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: -20px;
+  }
+
+  .hero_right {
+    margin-top: 0px;
+  }
+
+  .hero_left h1 {
+    font-size: 2.2rem;
+    line-height: 48px;
+  }
+
+  .hero_left p {
+    font-size: 1rem;
+  }
+
+  .hero_button {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero_right img {
+    width: 80vw;
+    max-width: 500px;
+  }
+
+  .hero_left h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .hero_left p {
+    font-size: 0.9rem;
+  }
+
+  .hero_button {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+}

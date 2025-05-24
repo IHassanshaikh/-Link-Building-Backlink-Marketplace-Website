@@ -1,0 +1,216 @@
+.Service {
+  width: 90%;
+  max-width: 1500px;
+  margin: 20px auto;
+  padding: 40px 0;
+}
+
+.title-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1d2128;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title-heading span {
+  text-decoration: underline;
+  color: #ED1D24;
+}
+
+.subtitle-text {
+  font-size: 1.7rem;
+  letter-spacing: 0.9px;
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-item {
+  background: rgba(35, 168, 246, 0.615);
+  width: 24.5vw;
+  min-height: 550px;
+  max-width: 410px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 80px 20px;
+}
+
+.service-image {
+  width: 9vw;
+  /* height: 180px; */
+  object-fit: cover;
+  border-radius: 8px;
+  align-self: center;
+}
+
+.service-heading {
+  font-size: 2.25rem;
+  margin: 15px 0;
+  font-weight: 700;
+  margin: 25px 0px 43px;
+  padding: 0px 10px;
+}
+
+.service-description {
+  font-size: 1.25rem;
+  color: #282c33;
+  flex-grow: 1;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  padding: 0px 24px;
+  /* Allows description to expand */
+}
+
+.action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  text-decoration: underline;
+  color: black;
+  font-size: 1.4rem;
+}
+
+.action-button img {
+  text-decoration: underline;
+}
+
+.action-button:hover {
+}
+
+.sh1 {
+  background-color: #FFDDC2;
+}
+
+.sh1 .service-heading {
+  color: #FF5733;
+}
+
+.sh2 {
+  background-color: #e8d3f8;
+}
+
+.sh2 .service-heading {
+  color: #9E6CC4;
+}
+
+.sh3 {
+  background-color: #b4ffbd;
+}
+
+.sh3 .service-heading {
+  color: #32873c;
+}
+
+@media (max-width: 1220px) {
+  .service-container {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1d2128;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .subtitle-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .service-item {
+    width: 28vw;
+    padding: 40px 0;
+    min-height: 460px;
+  }
+
+  .service-heading {
+    font-size: 1.5rem;
+    padding: 0px 10px;
+  }
+
+  .service-description {
+    font-size: 1rem;
+    flex-grow: 0;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .service-item {
+    width: 86vw;
+    padding: 40px 10px;
+    min-height: 400px;
+  }
+
+  .service-image {
+    width: 100px;
+  }
+
+  .service-heading {
+    font-size: 2.5rem;
+    margin: 10px;
+  }
+
+  .service-description {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .service-heading {
+    font-size: 2rem;
+  }
+
+  .Service {
+    padding: 20px 0;
+  }
+
+  .service-description {
+    font-size: 1.1rem;
+  }
+
+  .title-heading {
+    font-size: 1.4rem;
+  }
+
+  .subtitle-text {
+    font-size: 1rem;
+  }
+
+  .service-item {
+    width: auto;
+  }
+}
+
+
+
+        /* < !-- <div class="service-container"><div class="service-item sh1"><img src="./src/assets/images/Feature2.png" alt="Guest Posting" class="service-image"><h3 class="service-heading ">Guest Posting</h3><p class="service-description">Publish an article on High Authority (DA),
+        High Traffic,
+        and relevant websites. </p><a href="#" class="action-button"><img src="./src/assets/svg/point.svg" alt=""><span>Learn More</span></a></div><div class="service-item sh2"><img src="./src/assets/images/Feature.png" alt="Niche Edits" class="service-image"><h3 class="service-heading">Link Insertions (Niche Edits)</h3><p class="service-description">Get a contextual backlink added to an existing aged relevant blog article or page on a high authority website.</p><a href="#" class="action-button"><img src="./src/assets/svg/point.svg" alt=""><span>Learn More</span></a></div><div class="service-item sh3"><img src="./src/assets/images/Feature1.png" alt="Link Building" class="service-image"><h3 class="service-heading">Local Citation Building Service</h3><p class="service-description">Build a strong backlink profile with strategic placements on trusted platforms. </p><a href="#" class="action-button"><img src="./src/assets/svg/point.svg" alt=""><span>Learn More</span></a></div></div>-->< !-- </div>--> */

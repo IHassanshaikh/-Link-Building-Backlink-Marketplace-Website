@@ -1,0 +1,115 @@
+.join {
+  width: 98%;
+  max-width: 1500px;
+  margin: 20px auto;
+  padding: 50px 20px;
+  background: #ff7c6e33;
+  padding: 60px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.join-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1d2128;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.join-heading span {
+  color: #ED1D24;
+}
+
+.join-description {
+  font-size: 1.7rem;
+  letter-spacing: 0.9px;
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.reseller-button {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 12px 24px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #ff4935, #FF7E69);
+    color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.reseller-button:hover {
+  background: linear-gradient(45deg, #fe4631, #ff3718);
+}
+
+.small-text {
+  font-size: 18px;
+  color: #1d2128;
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+
+.note {
+  font-size: 18px;
+  color: #1d2128;
+  margin: 10px auto;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .join {
+    width: auto;
+  }
+
+  .join-heading {
+    font-size: 1.6rem;
+  }
+
+  .join-description {
+    font-size: 1.4rem;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+  }
+
+  .small-text,
+  .note {
+    font-size: 16px;
+    margin: 6px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  .main-heading {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .reseller-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .small-text {
+    font-size: 12px;
+  }
+
+  .note {
+    font-size: 11px;
+  }
+}

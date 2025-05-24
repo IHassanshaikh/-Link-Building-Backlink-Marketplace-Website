@@ -1,0 +1,125 @@
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -380px;
+  width: 280px;
+  height: 100%;
+  background: white;
+  color: black;
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Sidebar Header with Logo & Close Button */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar-logo {
+  width: 224px;
+  height: auto;
+}
+
+/* Close Button */
+.close-btn {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar-menu li {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar-menu li a {
+  color: rgb(39, 39, 39);
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  transition: color 0.3s;
+}
+.sidebar-menu li p {
+  color: rgb(39, 39, 39);
+  margin: 0 ;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  transition: color 0.3s;
+}
+
+.sidebar-menu li p:hover {
+  color: #3b2461;
+}
+
+/* Arrow Icon */
+.arrow {
+  font-size: 18px;
+  color: rgb(39, 39, 39);
+}
+
+/* Active Sidebar */
+.sidebar.active {
+  left: 0;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hide Hamburger on Large Screens */
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Show Sidebar for Mobile */
+@media (max-width: 1024px) {
+  .Header_nav {
+    display: none;
+  }
+}

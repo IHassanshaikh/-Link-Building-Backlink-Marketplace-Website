@@ -1,0 +1,200 @@
+.table-container {
+  overflow-x: auto;
+  padding: 20px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  border-bottom: 2px solid green;
+}
+
+.wide-column {
+  min-width: 160px;
+  max-width: 200px;
+  color: #282c33;
+  text-align: start !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.medium-column {
+  min-width: 74px;
+  color: #282c33;
+  width: 90px;
+}
+
+.small-column {
+  min-width: 44px;
+  max-width: 60px;
+  color: #282c33;
+}
+
+.icon {
+  width: 100%;
+  height: 0.7em;
+  display: block;
+  margin: 0 auto;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #7a7a7a;
+}
+
+.publish-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #ff4935, #FF7E69);
+    color: white;
+  padding: 6px 10px;
+  gap: 6px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 98%;
+  border: none;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+a{
+  text-decoration: none;
+}
+
+.publish-btn img {
+  width: 16px;
+}
+
+.publish-btn:hover {
+  background: linear-gradient(45deg, #fe4631, #ff3718);
+    transform: scale(1.05);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+@media (max-width: 768px) {
+.table-container {
+    padding: 14px;
+  }
+
+  table {
+    margin: 14px 0;
+  }
+
+  th,
+  td {
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+
+  .wide-column {
+    min-width: 120px;
+    max-width: 160px;
+  }
+
+  .medium-column {
+    min-width: 60px;
+    width: 80px;
+  }
+
+  .small-column {
+    min-width: 30px;
+    max-width: 50px;
+  }
+
+  .icon {
+    height: 0.6em;
+  }
+
+  .publish-btn {
+    padding: 4px 8px;
+    gap: 4px;
+    font-size: 14px;
+  }
+
+  .publish-btn img {
+    width: 14px;
+  }
+
+  .publish-btn:hover {
+    transform: scale(1.04);
+  }
+
+}
+
+@media (max-width: 425px) {
+.table-container {
+    padding: 8px;
+  }
+
+  table {
+    margin: 8px 0;
+  }
+
+  th,
+  td {
+    padding: 4px 2px;
+    font-size: 8px;
+  }
+
+  .wide-column {
+    min-width: 80px;
+    max-width: 120px;
+  }
+
+  .medium-column {
+    min-width: 30px;
+    width: 50px;
+  }
+
+  .small-column {
+    min-width: 20px;
+    max-width: 30px;
+  }
+
+  .icon {
+    height: 0.5em;
+  }
+
+  .publish-btn {
+    padding: 2px 4px;
+    gap: 2px;
+    font-size: 8px;
+  }
+
+  .publish-btn img {
+    width: 8px;
+  }
+
+  .publish-btn:hover {
+    transform: scale(1.02);
+  }
+
+}
+
